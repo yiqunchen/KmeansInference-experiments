@@ -1,4 +1,3 @@
-library(fastcluster)
 library(DropletUtils)
 library(scater)
 library(ggfortify)
