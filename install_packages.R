@@ -1,6 +1,7 @@
 packages <- c("devtools", "tidyverse", "latex2exp", "RColorBrewer",
               "shades","patchwork","palmerpenguins","keras",
-              "umap","DropletUtils","scater", "ggfortify")
+              "umap","DropletUtils","scater", "ggfortify","mclust",
+              "rdist","pracma")
 install.packages(setdiff(packages, rownames(installed.packages())))  
 if(!("KmeansInference" %in% rownames(installed.packages()))){
   devtools::install_github("yiqunchen/KmeansInference")

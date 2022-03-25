@@ -26,13 +26,15 @@ Rscript ./Figure_2_plot.R
 ```
 Rscript ./Figure_3_plot.R
 ```
-4. Generate Figure 4 (demonstrate selective Type I error control).
+4. Generate Figure 4 (demonstrate selective Type I error control). This step can be computationally intensive! The first R script runs the simulation study  described in Section 5.2 of our manuscript. This step might be computationally intensive!
 ```
-Rscript ./
+Rscript ./sim_type_1_data.R
+Rscript ./sim_type_1_plot.R
 ```
-5. Generate Figure 5 (detection probability and conditional power).
+5. Generate Figures 5 and 8 (detection probability, conditional power, and the regression-spline-based estimate of power). The first R script runs the simulation study  described in Section 5.3 of our manuscript. This step might be computationally intensive!
 ```
-Rscript ./
+Rscript ./sim_power_data.R 
+Rscript ./detect_p_power_plot.R
 ```
 6. Generate Figure 6 (analysis of the Palmer penguins data). You need to install the `palmerpenguins` package.
 ```
@@ -49,10 +51,12 @@ After downloading the data, you will need to need to rename the five downloaded 
 ```
 Rscript ./Table_1_and_Figure_10.R
 ```
-
-9. Generate Figure 8
-
-10. Generate Figure 9
+9. Generate Figure 9. The first R script runs the simulation study  described in Appendix A.8 of our manuscript and might be computationally intensive. 
+```
+Rscript ./sim_power_data_less_sparse.R
+Rscript ./detect_p_power_plot_q_50.R
+Rscript ./detect_p_power_plot_less_sparse.R
+```
 
 ### Reference: 
 - Chen YT and Witten DM. (2022+) Selective inference for k-means clustering. arXiv preprint. https://arxiv.org/abs/xxxx.xxxxx.
